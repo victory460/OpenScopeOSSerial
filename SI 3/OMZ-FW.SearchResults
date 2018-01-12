@@ -1,0 +1,17 @@
+---- OSSerial Matches (16 in 4 files) ----
+HTTPServer.h (g:\openscope mz\openscopefw\openscope\libraries\httpserver):#include <OSSerial.h>
+OpenScope.h (g:\openscope mz\openscopefw\openscope):#include <OSSerial.h>
+OpenScope.h (g:\openscope mz\openscopefw\openscope):    extern OSSerial         Serial;
+OpenScope.h (g:\openscope mz\openscopefw\openscope):	 extern OSSerial         Serial2;
+OSSerial.cpp (g:\openscope mz\openscopefw\openscope):/*    OSSerial.cpp                                                      */
+OSSerial.cpp (g:\openscope mz\openscopefw\openscope):size_t OSSerial::print(const char sz[]) 
+OSSerial.cpp (g:\openscope mz\openscopefw\openscope):size_t OSSerial::print(char ch) { 
+OSSerial.cpp (g:\openscope mz\openscopefw\openscope):void OSSerial::PeriodicTask(volatile void * pDMA)
+OSSerial.h (g:\openscope mz\openscopefw\openscope):/*    OSSerial.h                                                        */
+OSSerial.h (g:\openscope mz\openscopefw\openscope)://* As an example to create an instance of a OSSerial object with an instance name of SerialDMA using uart 5 dma 0 with a dma isr priority of 4  
+OSSerial.h (g:\openscope mz\openscopefw\openscope)://*     OSSerial SerialDMA(uartBuff, sizeof(uartBuff), &U4MODE, _UART4_RX_VECTOR, &DCH0CON, _DMA0_VECTOR);   
+OSSerial.h (g:\openscope mz\openscopefw\openscope):        OSSerial obj(buff, buffSize, &U##uart##MODE, _UART##uart##_RX_VECTOR, &DCH##dma##CON, _DMA##dma##_VECTOR, pri); \
+OSSerial.h (g:\openscope mz\openscopefw\openscope):        OSSerial obj(buff, buffSize, &U##uart##MODE, _UART##uart##_RX_IRQ, &DCH##dma##CON, _DMA##dma##_IRQ, pri); \
+OSSerial.h (g:\openscope mz\openscopefw\openscope):class OSSerial : public DMASerial
+OSSerial.h (g:\openscope mz\openscopefw\openscope):    OSSerial();
+OSSerial.h (g:\openscope mz\openscopefw\openscope):    OSSerial(uint8_t * const pBuffP,  uint32_t const cbBuffP, volatile void * pUART, uint8_t const irqRxP, volatile void * pDMA, uint8_t const irqDMAP, uint8_t const priDMAP) :
